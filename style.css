@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-image: url(/assets/abstract-geometric-wireframe-background_52683-59421.avif);
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    background-color: aliceblue;
+    position: sticky;
+    box-shadow: 2px,4px,2px,4px;
+}
+span{
+    color: rgb(33, 213, 213);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
+.image{
+    width: 80%;
+    border: 2px solid rgb(67, 6, 124);
+}
+/* Products Section Styling */
+.products {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container2 > h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.item1, .item2, .item3 {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.item1:hover, .item2:hover, .item3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.item2 h2, .item3 h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border: 2px solid #e9ecef;
+}
+
+.decription, .description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.item1 strong, .item2 strong, .item3 strong {
+    font-size: 1.5em;
+    color: #007bff;
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+    clear: both;
+}
+
+/* Clear floats after each item */
+.item1::after, .item2::after, .item3::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer{
+    margin-top: 120px;
+    background-color: aqua;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.icons{
+    margin: 20px 20px 40px 70px;
+    font-size: xx-large;
+    gap: 120px;
+    padding: 25px;
+    display: flexbox;
+    justify-items: center;
+}
+.contact-us{
+    display: flexbox;
+    justify-items: center;
+    font-size: x-large;
+    padding: 25px;
+    background: image #f7f7f7;
+}
+.deals{
+    display: flexbox;
+    justify-items: center;
+    font-size: x-large;
+    padding: 25px;
+    background: image #f7f7f7;;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.icons a {
+  color: #333;
+  font-size: 64px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #007bff;
+}
+
+/* Individual icon colors on hover */
+.icons a:hover ion-icon[name="logo-facebook"] {
+  color: #1877f2;
+}
+
+.icons a:hover ion-icon[name="logo-twitter"] {
+  color: #1da1f2;
+}
+
+.icons a:hover ion-icon[name="logo-instagram"] {
+  color: #e4405f;
+}
+
+  /* Responsive styles - Hide navigation below 768px */
+        @media screen and (max-width: 767px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .logo h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            
+            header {
+                justify-content: center;
+            }
+        }
+
+        /* Additional responsive adjustments */
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .nav-links ul {
+                gap: 1.5rem;
+            }
+            
+            .nav-links a {
+                font-size: 0.9rem;
+                padding: 0.4rem 0.8rem;
+            }
+        }
+ 
